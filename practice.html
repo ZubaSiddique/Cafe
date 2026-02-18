@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <title>Practice</title>
+    <style>
+  .shadow-hover:hover {
+    text-shadow: 5px 5px 10px #F2A65A;
+    cursor: pointer;
+  }
+  .text{
+     text-shadow: 2px 3px 3px #F2A65A;
+  }
+.hero{
+   overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    background-image:  url('img/homw.jpg');
+}
+@media (max-width:420px) {
+  .hero{
+     background-image:  url('img/mobilehero.jpg');
+  }
+}
+.playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+</style>
+</head>
+
+
+<body>
+    <!-- Home page -->
+<div class="w-[100%] overflow-x-hidden">     
+   <div class="lg:h-[760px] h-[680px] w-full bg-cover bg-center relative hero ">
+   
+<nav  class="flex justify-between items-center absolute 
+border-2 border-[#FFF6D1] 
+lg:left-0 left-[20px] lg:right-0 right-[20px]
+mx-auto 
+mt-[49px] 
+py-[5px] 
+px-6
+max-w-[1200px] 
+z-50">
+ 
+    <h1 class="font-bold lg:text-5xl text-[37px] text-[#FFF6D1] lg:pl-10 shadow-hover " style="font-family: 'Playfair Display' , serif;">Caffeine</h1>  
+        <!-- <ul  class="flex gap-10  text-[#FFF6D1] text-3xl "
+         style="font-family: 'Playfair Display' , serif;"> -->
+<ul id="mobileMenu" 
+    class="hidden lg:flex flex-col lg:flex-row 
+    absolute lg:static 
+    top-[60px] left-[67%] w-[33%] lg:w-auto 
+    bg-[#1c0f08] lg:bg-transparent 
+    gap-4 lg:gap-10 
+    text-[#FFF6D1] lg:text-3xl text-2xl rounded-lg 
+    py-4 lg:py-0 
+    text-center playfair" style="font-family: 'Playfair Display' , serif;">
+
+
+            <li><a href="#" class="shadow-hover hover:text-[#F2A65A]">
+    Home
+  </a></li>
+             <li><a href="#" class="shadow-hover hover:text-[#F2A65A]">Menu</a></li>
+              <li><a href="#" class="shadow-hover hover:text-[#F2A65A]">About</a></li>
+               <li><a href="#" class="shadow-hover hover:text-[#F2A65A]">Facilities</a></li>
+        </ul>
+         <button class=" lg:px-8  px-10 lg:pr-20 pr-2  font-bold lg:py-6 text-[#FFF6D1] lg:text-3xl text-xl shadow-hover hover:text-[#F2A65A]" style="font-family: 'Playfair Display' , serif;">Sign In</button>
+     
+<!-- Hamburger Button -->
+<button id="menuBtn" class="lg:hidden text-[#FFF6D1] text-2xl pr-[5px]">
+  ☰
+</button>
+
+        </nav>   
+<div class="relative h-[610px] bg-cover bg-center">
+  <p class="absolute lg:top-[240px] top-[175px] lg:w-[400px] w-[350px] lg:left-[800px] left-[23px] lg:text-6xl text-5xl font-bold text-[#FFF6D1] text" data-aos="fade-left" style="font-family: 'Playfair Display', serif;">
+    Discover The Art Of Perfect Coffee
+  </p>
+</div>
+
+<div class="absolute lg:top-[540px] top-[460px] lg:left-[640px] -left-[130px] lg:-pl-20 bg-cover bg-center lg:w-[560px] w-[500px] text-[16px]" style="font-family: 'Playfair Display', serif;">
+<p class="left-[900px]  pt-20 ml-40 -mt-[190px] text-[#FFF6D1]  "  data-aos="fade-left">Experience The Rich And Bold Flavors Of Our Exuisite
+     Coffee blends , Crafted To Awaken Your Senses And Start Your Day Right</p>
+</div>
+
+<div class="absolute flex lg:top-[540px] top-[460px] lg:left-[800px] left-[14px] lg:gap-10 gap-8 " data-aos="fade-left">
+    <button class="  lg:px-6 px-4 lg:py-3 py-[10px] transition bg-[#FFF6D1] text-[22px] font-[400] hover:text-[#FFF6D1] hover:border-[#FFF6D1] border-2 hover:bg-transparent ">Order Now→</button>
+    <button class=" lg:px-6 px-4 lg:py-3 transition border-2 border-[#FFF6D1] text-[#FFF6D1] text-[22px] font-[400] hover:bg-[#FFF6D1] hover:text-black ">Explore More</button>
+ </div>
+ 
+ <div class="flex absolute gap-10 lg:top-[630px] top-[550px] lg:left-[780px] -left-[8px] justify-center">
+  <!-- Counter 1 -->
+  <div class="text-center ">
+    <p class="text-5xl font-bold text-[#FFF6D1]" id="coffeeCount" >10</p>
+    <span class="text-lg pt-4 text-[#FFF6D1]">Items of Coffee</span>
+  </div>
+
+  <!-- Counter 2 -->
+  <div class="text-center">
+    <p class="text-5xl font-bold text-[#FFF6D1]" id="orderCount" >40</p>
+    <span class="text-lg text-[#FFF6D1]">Orders Running</span>
+  </div>
+
+  <!-- Counter 3 -->
+  <div class="text-center">
+    <p class="text-5xl font-bold text-[#FFF6D1]" id="customerCount" >900</p>
+    <span class="text-lg text-[#FFF6D1]">Happy Customers</span>
+  </div>
+</div>
+
+          </div>
+  
+
+
+ 
+   <script>
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+
+   
+<script>
+    AOS.init({ duration: 1000 });
+  </script>
+    <script src="coffee.js"></script>
+</body>
+</html>

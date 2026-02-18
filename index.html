@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <title>Coffee Shop☕</title>
+    <style>
+  .shadow-hover:hover {
+    text-shadow: 5px 5px 10px #F2A65A;
+    cursor: pointer;
+  }
+  .text{
+     text-shadow: 2px 3px 3px #F2A65A;
+  }
+.hero{
+   overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    background-image:  url('img/home.jpg');
+}
+@media (max-width:420px) {
+  .hero{
+     background-image:  url('img/mobilehero.jpg');
+  }
+}
+</style>
+</head>
+
+
+<body>
+    <!-- Home page -->
+     <div class="w-90% overflow-x-hidden">
+ <div class="lg:h-[760px] h-[680px] w-full bg-cover bg-center relative hero ">
+   
+<nav  class="flex justify-between items-center absolute 
+border-2 border-[#FFF6D1] 
+lg:left-0 left-[20px] lg:right-0 right-[20px]
+mx-auto 
+mt-[49px] 
+py-[5px] 
+px-6
+max-w-[1200px] 
+z-50">
+ 
+    <h1 class="font-bold lg:text-5xl text-[37px] text-[#FFF6D1] lg:pl-10 shadow-hover " style="font-family: 'Playfair Display' , serif;">Caffeine</h1>  
+        <!-- <ul  class="flex gap-10  text-[#FFF6D1] text-3xl "
+         style="font-family: 'Playfair Display' , serif;"> -->
+<ul id="mobileMenu" 
+    class="hidden lg:flex flex-col lg:flex-row 
+    absolute lg:static 
+    top-[70px] left-[67%] w-[33%] lg:w-auto 
+    bg-[#1c0f08] lg:bg-transparent 
+    gap-4 lg:gap-10 
+    text-[#FFF6D1] lg:text-3xl text-2xl rounded-lg 
+    py-4 lg:py-0 
+    text-center playfair" style="font-family: 'Playfair Display' , serif;">
+
+
+            <li><a href="#" class="shadow-hover hover:text-[#F2A65A]">Home</a></li>
+             <li><a href="#menus" class="shadow-hover hover:text-[#F2A65A]">Menu</a></li>
+              <li><a href="#" class="shadow-hover hover:text-[#F2A65A]">About</a></li>
+               <li><a href="#contact" class="shadow-hover hover:text-[#F2A65A]">Contact</a></li>
+        </ul>
+         <button class=" lg:px-8  px-10 lg:pr-20 pr-2  font-bold lg:py-6 text-[#FFF6D1] lg:text-3xl text-xl shadow-hover hover:text-[#F2A65A]" style="font-family: 'Playfair Display' , serif;">Sign In</button>
+     
+<!-- Hamburger Button -->
+<button id="menuBtn" class="lg:hidden text-[#FFF6D1] text-2xl pr-[5px]">
+  ☰
+</button>
+
+        </nav>   
+<div class="relative h-[610px] bg-cover bg-center">
+  <p class="absolute lg:top-[240px] top-[175px] lg:w-[400px] w-[350px] lg:left-[800px] left-[23px] lg:text-6xl text-5xl font-bold text-[#FFF6D1] text" data-aos="fade-left" style="font-family: 'Playfair Display', serif;">
+    Discover The Art Of Perfect Coffee
+  </p>
+</div>
+
+<div class="absolute lg:top-[540px] top-[460px] lg:left-[640px] -left-[130px] lg:-pl-20 bg-cover bg-center lg:w-[560px] w-[500px] text-[16px]" style="font-family: 'Playfair Display', serif;">
+<p class="left-[900px]  pt-20 ml-40 -mt-[190px] text-[#FFF6D1]  "  data-aos="fade-left">Experience The Rich And Bold Flavors Of Our Exuisite
+     Coffee blends , Crafted To Awaken Your Senses And Start Your Day Right</p>
+</div>
+
+<div class="absolute flex lg:top-[540px] top-[460px] lg:left-[800px] left-[14px] lg:gap-10 gap-8 " data-aos="fade-left">
+    <button class="  lg:px-6 px-4 lg:py-3 py-[10px] transition bg-[#FFF6D1] text-[22px] font-[400] hover:text-[#FFF6D1] hover:border-[#FFF6D1] border-2 hover:bg-transparent ">Order Now→</button>
+    <button class=" lg:px-6 px-4 lg:py-3 transition border-2 border-[#FFF6D1] text-[#FFF6D1] text-[22px] font-[400] hover:bg-[#FFF6D1] hover:text-black ">Explore More</button>
+ </div>
+ 
+ <div class="flex absolute gap-10 lg:top-[630px] top-[550px] lg:left-[780px] -left-[8px] justify-center" data-aos="fade-left">
+  <!-- Counter 1 -->
+  <div class="text-center ">
+    <p class="text-5xl font-bold text-[#FFF6D1]" id="coffeeCount" >10</p>
+    <span class="text-lg pt-4 text-[#FFF6D1]">Items of Coffee</span>
+  </div>
+
+  <!-- Counter 2 -->
+  <div class="text-center">
+    <p class="text-5xl font-bold text-[#FFF6D1]" id="orderCount" >40</p>
+    <span class="text-lg text-[#FFF6D1]">Orders Running</span>
+  </div>
+
+  <!-- Counter 3 -->
+  <div class="text-center">
+    <p class="text-5xl font-bold text-[#FFF6D1]" id="customerCount" >900</p>
+    <span class="text-lg text-[#FFF6D1]">Happy Customers</span>
+  </div>
+</div>
+          </div>
+     
+
+
+          <div class="  py-20 bg-[#ffdab9]  lg:w-[100%] " >
+<div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-10  items-center justify-between lg:mt-20 mt-2">
+    
+    <!-- LEFT SIDE (Image Area) -->
+    <div class="relative w-1/2 flex justify-center" data-aos="fade-right">
+      
+      <!-- Background Shape -->
+      <div class="absolute lg:w-80 lg:h-80 w-[180px] h-[225px] border-2 border-black rotate-12"></div>
+
+      <!-- Image -->
+      <img src="img/coffee2.jpg"
+           class="relative w-80 rotate-[-8deg] shadow-xl z-10" >
+    </div>
+
+    <!-- RIGHT SIDE (Text Area) bg-[#FFE1B8] -->
+    <div class="w-1/2 lg:pl-10 pl-12 lg:w-[600px] w-[450px]" data-aos="fade-left">
+      <h1 class="lg:text-6xl text-5xl font-serif font-bold text-brown-900 text-[#4F200D]">
+        Coffee Heaven
+      </h1>
+
+      <p class="mt-6 text-gray-700 leading-relaxed lg:w-[400px] w-[350px] ">
+       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy the 1500s,
+          and scrambled it to make a type specimen book
+      </p>
+
+      <button class="mt-6 bg-[#4F200D] text-white px-6 py-3 hover:bg-transparent hover:border-2 hover:border-[#4F200D] hover:text-[#4F200D] text-[20px]">
+        View All →
+      </button>
+    </div>
+
+  </div>
+          </div>
+     
+           <div class="bg-[#ffdab9]  lg:py-20 py-4 ">
+          <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-10 items-center justify-between  lg:mb-20 mb-2">
+<!-- Text side -->
+           <div class="w-1/2 lg:pl-10 pl-10 lg:w-[600px] w-[450px] " data-aos="fade-right">
+            <h1 class=" lg:text-6xl text-5xl font-serif font-bold text-brown-900 text-[#4F200D]">
+        Jean's Coffee
+        </h1>
+
+      <p class="mt-6 text-gray-700 leading-relaxed lg:w-[400px] w-[350px] ">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy the 1500s,
+          and scrambled it to make a type specimen book.
+      </p>
+
+      <div class="flex justify-end mt-6 lg:w-[400px] w-[320px]">
+    <button class="bg-[#4F200D] text-white px-6 py-3 
+                   hover:bg-transparent hover:border-2 
+                   hover:border-[#4F200D] hover:text-[#4F200D] 
+                   text-[20px]">
+      View All →
+    </button>
+  </div>
+    </div>
+<!-- Image side -->
+    <!-- LEFT SIDE (Image Area) -->
+    <div class="relative w-1/2 flex justify-center" data-aos="fade-left">
+      
+      <!-- Background Shape -->
+      <div class="absolute lg:w-80 lg:h-80 w-[180px] h-[225px] border-2 border-black rotate-12"></div>
+
+      <!-- Image -->
+      <img src="img/coffee3.jpg"
+           class="relative w-80 rotate-[-8deg] shadow-xl z-10">
+    </div>
+              </div>
+     </div>
+
+     <div id="menus" class=" bg-[#CFA77C]">
+     <h1 class="flex items-center justify-center lg:text-6xl text-[43px] lg:pl-0  font-serif font-bold text-[#3A1709] py-10" data-aos="fade-up-left">Best Selling Item</h1>
+     <p class=" text-center mx-auto font-serif text-[#585952] lg:w-[800px] w-[350px] text-[18px] " data-aos="fade-up-left">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+       <nav class="flex justify-center items-center pt-[50px] font-serif lg:text-3xl text-2xl text-[#585952]" data-aos="fade-up-left">
+              <ul class="flex lg:gap-12 gap-8">
+                <li><a href="#" class="hover:text-[#3A1709] hover:border-b-2 border-[#3A1709]">All</a></li>
+                <li><a href="#" class="hover:text-[#3A1709] hover:border-b-2 border-[#3A1709]">Black</a></li>
+                <li><a href="#" class="hover:text-[#3A1709] hover:border-b-2 border-[#3A1709]">Espresso</a></li>
+                <li><a href="#" class="hover:text-[#3A1709] hover:border-b-2 border-[#3A1709]">Dopio</a></li>
+              </ul>
+       </nav>
+              <!-- cards -->
+      
+<div class="relative py-[20px] mt-[5px] px-10 lg:px-40 bg-[#CFA77C]">
+
+  <!-- Slider Viewport: hides extra cards -->
+  <div class="overflow-hidden max-w-full sm:max-w-[990px] mx-auto">
+
+    <!-- Sliding Track -->
+    <div id="sliderTrack" class="flex gap-10 lg:gap-[45px] transition-transform duration-500">
+
+      <!-- Card 1 -->
+     <div class="w-full sm:w-[300px] h-[400px] border-2 border-[#3A1709] flex flex-col relative flex-shrink-0" data-aos="fade-up-left">
+
+                  <div class="absolute top-[24px] left-[28px] w-[240px] h-[230px] bg-cover bg-center border-[7px]
+                   border-[#CFA77C]" style="background-image: url('img/kofe4.jpg');"></div>
+
+                  <div class="h-[150px] bg-[#3A1709] flex items-center justify-center "></div>
+                  <div class="h-[220px] pt-[142px] font-serif pl-[42px] text-4xl font-bold">Cappucino</div>
+                  <div class="h-[80px] bg-[#DCCFC0] text-2xl flex items-center justify-center border-2 
+                  border-[#3A1709] hover:bg-[#3A1709] hover:text-[#DCCFC0] hover:cursor-pointer" >Order Now</div>
+                </div>
+
+      <!-- Card 2 -->
+  <div class="w-full sm:w-[300px] h-[400px] border-2 border-[#3A1709] flex flex-col relative flex-shrink-0" data-aos="fade-up-left">
+
+                  <div class="absolute top-[24px] left-[28px] w-[240px] h-[230px] bg-cover bg-center border-[7px]
+                   border-[#CFA77C]" style="background-image: url('img/kofe1.jpg');"></div>
+
+                  <div class="h-[150px] bg-[#3A1709] flex items-center justify-center "></div>
+                  <div class="h-[220px] pt-[142px] font-serif pl-[42px] text-4xl font-bold">Cappucino</div>
+                  <div class="h-[80px] bg-[#DCCFC0] text-2xl flex items-center justify-center border-2
+                   border-[#3A1709] hover:bg-[#3A1709] hover:text-[#DCCFC0] hover:cursor-pointer" >Order Now</div>
+                </div>
+      <!-- Card 3 -->
+   <div class="w-full sm:w-[300px] h-[400px] border-2 border-[#3A1709] flex flex-col relative flex-shrink-0" data-aos="fade-up-left">
+
+                  <div class="absolute top-[24px] left-[28px] w-[240px] h-[230px] bg-cover bg-center 
+                  border-[7px] border-[#CFA77C]" style="background-image: url('img/coffee1.jpg');"></div>
+
+                  <div class="h-[150px] bg-[#3A1709] flex items-center justify-center "></div>
+                  <div class="h-[220px] pt-[142px] font-serif pl-[42px] text-4xl font-bold">Cappucino</div>
+                  <div class="h-[80px] bg-[#DCCFC0] text-2xl flex items-center justify-center border-2 
+                  border-[#3A1709] hover:bg-[#3A1709] hover:text-[#DCCFC0] hover:cursor-pointer" >Order Now</div>
+                </div>
+      <!-- Card 4 -->
+      <div class="w-full sm:w-[300px] h-[400px] border-2 border-[#3A1709] flex flex-col relative flex-shrink-0" data-aos="fade-up-left">
+
+                  <div class="absolute top-[24px] left-[28px] w-[240px] h-[230px] bg-cover bg-center
+                   border-[7px] border-[#CFA77C]" style="background-image: url('img/coffee6.jpg');"></div>
+
+                  <div class="h-[150px] bg-[#3A1709] flex items-center justify-center "></div>
+                  <div class="h-[220px] pt-[142px] font-serif pl-[42px] text-4xl font-bold">Cappucino</div>
+                  <div class="h-[80px] bg-[#DCCFC0] text-2xl flex items-center justify-center border-2 
+                  border-[#3A1709] hover:bg-[#3A1709] hover:text-[#DCCFC0] hover:cursor-pointer" >Order Now</div>
+                </div>
+      <!-- Card 5 -->
+      <div class="w-full sm:w-[300px] h-[400px] border-2 border-[#3A1709] flex flex-col relative flex-shrink-0" data-aos="fade-up-left">
+
+                  <div class="absolute top-[24px] left-[28px] w-[240px] h-[230px] bg-cover bg-center
+                   border-[7px] border-[#CFA77C]" style="background-image: url('img/kofe2.jpg');"></div>
+
+                  <div class="h-[150px] bg-[#3A1709] flex items-center justify-center "></div>
+                  <div class="h-[220px] pt-[142px] font-serif pl-[42px] text-4xl font-bold">Cappucino</div>
+                  <div class="h-[80px] bg-[#DCCFC0] text-2xl flex items-center justify-center border-2
+                   border-[#3A1709] hover:bg-[#3A1709] hover:text-[#DCCFC0] hover:cursor-pointer" >Order Now</div>
+                </div>
+
+    </div>
+  </div>
+
+
+
+<!-- Buttons -->
+     <div class="flex items-center justify-center gap-10 pb-10 pt-10">
+             <button id="prev" class=" w-[70px] h-[70px] pt-[5px] bg-[#3A1709] text-[#FFE1B8]
+              hover:bg-[#DCCFC0] hover:text-[#3A1709] hover:border-2 border-[#3A1709] 
+              font-bold text-5xl flex itmes-center justify-center">←</button>
+
+             <button id="next" class="w-[70px] h-[70px] pt-[5px] bg-[#3A1709] text-[#FFE1B8] 
+             hover:bg-[#DCCFC0] hover:text-[#3A1709] hover:border-2 border-[#3A1709]
+             font-bold text-5xl flex itmes-center justify-center">→</button>
+     </div>
+     </div>
+               
+<!-- Reveiws -->
+     <div class="min-h-[550px] bg-[#FFE1B8] py-10 ">
+
+  <h1 class="text-center text-5xl lg:text-6xl font-bold text-[#3A1709]"
+      style="font-family: 'Playfair Display', serif;">
+    What Our Customer Says
+  </h1>
+
+  <div class="flex items-center justify-between px-2 gap-[8px] lg:px-16 mt-10">
+
+    <!-- Left Button -->
+    <button class="w-[45px] h-[45px] lg:w-[70px] lg:h-[70px]
+      bg-[#DCCFC0] text-[#3A1709]
+      border-2 border-[#3A1709]
+      hover:bg-[#3A1709] hover:text-[#FFE1B8]
+      font-bold text-3xl lg:text-5xl
+      flex items-center justify-center lg:pb-[7px] pb-[5px]">
+      ←
+    </button>
+
+    <!-- Card -->
+    <div class="bg-[#3A1709] text-white
+        w-[85%] sm:w-[75%] lg:w-[67%]
+        p-6 sm:p-8
+        ">
+
+      <p class="text-sm sm:text-base lg:text-xl text-center">
+        The short answer is that lorem ipsum text doesn't actually "say" anything
+                   meaningful. It's deliberately scrambled Latin that doesn't form coherent
+                    sentences. While it comes from Cicero's "De Finibus Bonorum et Malorum,"
+                     the text has been modified so extensively that it's nonsensical.
+                    Printers in the 1500s scrambled the words from Cicero's...
+      </p>
+
+      <div class="text-yellow-500 text-xl flex justify-center mt-4">
+        ★ ★ ☆ ★ ☆
+      </div>
+
+      <p class="text-center text-xl sm:text-2xl lg:text-3xl
+         mt-4 font-bold"
+         style="font-family: 'Playfair Display', serif;">
+        Shalima Hayden
+      </p>
+
+    </div>
+
+    <!-- Right Button -->
+    <button class="w-[45px] h-[45px] lg:w-[70px] lg:h-[70px]
+      bg-[#DCCFC0] text-[#3A1709]
+      border-2 border-[#3A1709]
+      hover:bg-[#3A1709] hover:text-[#FFE1B8]
+      font-bold text-3xl lg:text-5xl
+      flex items-center justify-center lg:pb-[7px] pb-[5px]">
+      →
+    </button>
+
+  </div>
+
+</div>
+
+<!-- Subscription -->
+ <div  class="bg-[#CFA77C] lg:h-[250px] h-[380px] flex lg:flex-row flex-col">
+  <div>
+<p class="text-[#3A1709] lg:text-5xl text-4xl w-[450px] font-bold lg:ml-[90px] ml-[37px] lg:mt-[60px] mt-[40px]" data-aos="fade-up-right" style="font-family: 'Playfair Display' , serif;"  >Stay Up To Date On  </p>
+<p class="text-[#3A1709] lg:text-5xl text-4xl w-[450px] font-bold lg:ml-[90px] ml-[37px] mt-[20px]" data-aos="fade-up-right" style="font-family: 'Playfair Display' , serif;"  > All Offers And News </p></div>
+   <div class=" mx-[100px]">
+      <p class="text-[#585952] text-[19px] lg:mt-[50px] mt-[30px] lg:ml-[40px] -ml-[63px] lg:w-[430px] w-[350px]" data-aos="fade-up-right">Be The First To Know about New collections , Special Events And What's
+         Going On At Kitechen</p>
+         <div class="flex" data-aos="fade-up-right">
+             <input class="lg:ml-[40px] -ml-[60px] mt-[30px] px-[20px] py-[15px] lg:w-[320px] w-[370px] bg-[#FFE1B8] text-black" type="text" placeholder="Enter Your Email Address">
+             <button class="px-[14px] pb-[10px] mt-[30px] bg-[#3A1709] hover:text-[#3A1709] hover:bg-[#FFE1B8] hover:border-4 border-[#3A1709]
+             text-white font-bold text-5xl flex justify-center items-center">→</button>
+         </div>
+   </div>
+ </div>
+<!-- Footer -->
+ <footer id="contact" class="bg-[#2b160c] text-[#f5e6d3]">
+
+  <!-- main wrapper -->
+  <div class="max-w-7xl mx-auto grid md:grid-cols-3 lg:px-[50px] px-[32px]">
+
+    <!-- LEFT -->
+    <div class="p-10 lg:border-r lg:border-l border-r border-l border-b sm:border-b-0 space-y-6">
+      <div class="border-4 border-[#FFE1B8]  w-60 h-32 flex items-center justify-center">
+        <h1 class="text-5xl font-serif bg-[#FFE1B8] text-[#3A1709] border-4 border-white px-10 py-12 ">Caffeine</h1>
+      </div>
+
+      <p class="text-lg leading-relaxed">
+        Enjoy Better And Better <br />
+        Quality Coffee With Caffeine.
+      </p>
+    </div>
+
+
+    <!-- MIDDLE -->
+    <div class="p-10 lg:border-r border-r border-l border-b sm:border-l-0 sm:border-b-0 border-[#FFE1B8]  space-y-4">
+      <h2 class="text-3xl font-semibold">Contact Us</h2>
+
+      <p>Caffeine@gmail.com</p>
+      <p>Call Us: (321) 562 - 57420</p>
+      <p>Text Us: (321) 562 - 57420</p>
+
+      <p class="pt-4">
+        39 Brooklyn Street <br />
+        Covington, VA 244426
+      </p>
+    </div>
+
+
+    <!-- RIGHT -->
+    <div class="p-10 space-y-6 lg:border-r border-r border-l sm:border-l-0 border-[#FFE1B8]">
+      <img
+        src="img/coffee7.jpg"
+        class="w-60 h-[200px] rounded-md"
+        alt="coffee"
+      />
+
+      <div>
+        <h3 class="text-2xl mb-3">Follow Us</h3>
+
+        <div class="flex gap-5 text-2xl">
+          <i class="fab fa-pinterest hover:text-[#e6c8a5] cursor-pointer"></i>
+          <i class="fab fa-instagram hover:text-[#e6c8a5] cursor-pointer"></i>
+          <i class="fab fa-twitter hover:text-[#e6c8a5] cursor-pointer"></i>
+          <i class="fab fa-facebook hover:text-[#e6c8a5] cursor-pointer"></i>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- bottom bar -->
+  <div class="border-t border-[#FFE1B8]  text-center py-5 bg-[#1c0f08] text-sm">
+    Copyright: 2023 Tophats Agency
+  </div>
+
+  
+</footer>
+
+
+   </div>  
+  
+   </div>
+   
+<script>
+    AOS.init({ duration: 1000 });
+  </script>
+    <script src="coffee.js"></script>
+</body>
+</html>
