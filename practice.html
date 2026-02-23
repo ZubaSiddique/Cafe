@@ -12,6 +12,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
     <title>Practice</title>
@@ -27,7 +28,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
    overflow-x: hidden;
     position: relative;
     width: 100%;
-    background-image:  url('img/homw.jpg');
+    background-image:  url('img/home.jpg');
+}
+.menu{
+ font-family: Didot, "Didot LT STD", "Bodoni MT", "Libre Bodoni", serif;
 }
 @media (max-width:420px) {
   .hero{
@@ -121,12 +125,199 @@ z-50">
     <span class="text-lg text-[#FFF6D1]">Happy Customers</span>
   </div>
 </div>
+    </div>
+  
+<!-- updated menu -->
+
+           <div class="bg-[#8B5E3C] p-4 shadow-2xl mx-auto">
+
+    <!-- Menu Card -->
+    <div class="bg-[#F8F1E7] border-[6px] border-[#9B1C1C] lg:p-8 p-2 -ml-[6.5px]  w-[95vw] max-w-[1000px] lg:mx-auto mx-auto ">
+
+      <!-- Logo -->
+      <div class="text-center mb-4">
+        <h2 class="text-red-900 font-black text-xl tracking-widest">LEO</h2>
+        <p class="text-sm text-red-700 tracking-wider">COFFEE</p>
+      </div>
+
+      <!-- Title -->
+      <h1 class="text-center text-4xl font-bold text-red-900 mb-8 tracking-wide">
+        BEVERAGE MENU
+      </h1>
+
+      <!-- GRID LAYOUT -->
+      <!-- Desktop: 3 columns EXACTLY as you had -->
+      <!-- Mobile: 2 columns with Coffee+Milk in col1, Icon+Tea in col2 -->
+      <div class="grid grid-cols-2 lg:grid-cols-3 lg:gap-10 gap-4">
+
+        <!-- ================= COFFEE (Desktop col1) + MILK (Mobile col1) ================= -->
+        <div class="space-y-6 ml-0 pl-0 lg:space-y-6">
+          <!-- COFFEE Section - Always visible -->
+          <div>
+            <h3 class="text-center text-3xl font-semibold border-b border-t border-red-800 py-2 text-red-900">
+              COFFEE
+            </h3>
+
+            <!-- Item -->
+            <div class="mt-6">
+              <div class="flex items-center">
+                <span>Cappuccino</span>
+                <div class="flex-grow border-b border-dotted border-gray-500 mx-2"></div>
+                <span>Rs 90</span>
+              </div>
+              <p class="text-xs text-red-700 mt-1">Espresso with steamed milk & foam</p>
+            </div>
+
+            <div class="mt-4">
+              <div class="flex items-center">
+                <span>Café Latte</span>
+                <div class="flex-grow border-b border-dotted border-gray-500 mx-2"></div>
+                <span>Rs 90</span>
+              </div>
+              <p class="text-xs text-red-700 mt-1">Smooth espresso with hot milk</p>
+            </div>
+
+            <div class="mt-4">
+              <div class="flex items-center">
+                <span>Café Mocha</span>
+                <div class="flex-grow border-b border-dotted border-gray-500 mx-2"></div>
+                <span>Rs 105</span>
+              </div>
+              <p class="text-xs text-red-700 mt-1">Chocolate flavored espresso</p>
+            </div>
+
+            <div class="mt-4">
+              <div class="flex items-center">
+                <span>Americano</span>
+                <div class="flex-grow border-b border-dotted border-gray-500 mx-2"></div>
+                <span>Rs 105</span>
+              </div>
+              <p class="text-xs text-red-700 mt-1">Espresso melted with hot water</p>
+            </div>
+          </div>
+
+          <!-- MILK Section - Hidden on desktop, visible on mobile in col1 -->
+          <div class="block lg:hidden mt-8">
+            <h3 class="text-3xl font-semibold border-b border-t border-red-800 py-2 text-red-900 text-center">
+              MILK
+            </h3>
+
+            <div class="mt-4">
+              <div class="flex items-center">
+                <span>Hot Milk</span>
+                <div class="flex-grow border-b border-dotted border-gray-500 mx-2"></div>
+                <span>Rs 45</span>
+              </div>
+              <p class="text-xs text-red-700 mt-1">Creamy steamed fresh milk</p>
+            </div>
+          </div>
+        </div>
+     
+        <!-- ================= MILK+ICON (Desktop col2) + ICON (Mobile col2 top) ================= -->
+        <div class="space-y-6 flex flex-col items-center text-center">
+
+          <!-- Icon Box - Visible on both mobile and desktop -->
+          <div class="border border-red-800 p-6 w-full">
+            <svg class="w-20 h-20 mx-auto text-red-800" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 8h13a4 4 0 010 8H3z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16 8v8" />
+            </svg>
+            <p class="text-red-800 mt-3">Freshly Brewed Daily</p>
+          </div>
+
+          <!-- MILK Section - Hidden on mobile, visible on desktop (original position) -->
+          <div class="hidden lg:block w-full">
+            <h3 class="text-3xl font-semibold border-b border-t border-red-800 py-2 text-red-900">
+              MILK
+            </h3>
+
+            <div class="mt-4">
+              <div class="flex items-center">
+                <span>Hot Milk</span>
+                <div class="flex-grow border-b border-dotted border-gray-500 mx-2"></div>
+                <span>Rs 45</span>
+              </div>
+              <p class="text-xs text-red-700 mt-1">Creamy steamed fresh milk</p>
+            </div>
+          </div>
+
+          <!-- TEA Section - Visible on mobile only (in col2) -->
+          <div class="block lg:hidden w-full mt-4">
+            <h3 class="text-3xl text-center font-semibold border-b border-t border-red-800 py-2 text-red-900">
+              TEA
+            </h3>
+
+            <div class="mt-4">
+              <div class="flex  items-center">
+                <div>Green Tea</div>
+                <div class="flex-grow border-b border-dotted border-gray-500 mx-2"></div>
+                <div>Rs 35</div>
+              </div>
+              <p class="text-xs text-red-700 mt-1">Soothing herbal infusion</p>
+            </div>
+
+            <div class="mt-4">
+              <div class="flex items-center">
+                <span>Lemon Tea</span>
+                <div class="flex-grow border-b border-dotted border-gray-500 mx-2"></div>
+                <span>Rs 35</span>
+              </div>
+              <p class="text-xs text-red-700 mt-1">Refreshing citrus blend</p>
+            </div>
+
+            <div class="mt-4">
+              <div class="flex items-center">
+                <span>Assam Tea</span>
+                <div class="flex-grow border-b border-dotted border-gray-500 mx-2"></div>
+                <span>Rs 35</span>
+              </div>
+              <p class="text-xs text-red-700 mt-1">Strong & rich traditional tea</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= TEA (Desktop col3 only) ================= -->
+         <div class="hidden lg:block space-y-6"> 
+          <h3 class="text-3xl text-center font-semibold border-b border-t border-red-800 py-2 text-red-900">
+            TEA
+          </h3>
+
+         <div>
+            <div class="flex items-center">
+              <span>Lemon Tea</span>
+              <div class="flex-grow border-b border-dotted border-gray-500 mx-2"></div>
+              <span>Rs 35</span>
+            </div>
+            <p class="text-xs text-red-700 mt-1">Refreshing citrus blend</p>
+          </div>
+
+          <div>
+            <div class="flex items-center">
+              <span>Lemon Tea</span>
+              <div class="flex-grow border-b border-dotted border-gray-500 mx-2"></div>
+              <span>Rs 35</span>
+            </div>
+            <p class="text-xs text-red-700 mt-1">Refreshing citrus blend</p>
+          </div>
+
+          <div>
+            <div class="flex items-center">
+              <span>Assam Tea</span>
+              <div class="flex-grow border-b border-dotted border-gray-500 mx-2"></div>
+              <span>Rs 35</span>
+            </div>
+            <p class="text-xs text-red-700 mt-1">Strong & rich traditional tea</p>
+          </div>
+        </div> 
+
+      </div>
+
+    </div>
+  </div>
+
 
           </div>
   
-
-
- 
    <script>
   const menuBtn = document.getElementById("menuBtn");
   const mobileMenu = document.getElementById("mobileMenu");
