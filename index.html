@@ -29,6 +29,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     width: 100%;
     background-image:  url('img/home.jpg');
 }
+.coffee:hover{
+text-shadow:2px 2px 4px gray;
+}
 @media (max-width:420px) {
   .hero{
      background-image:  url('img/mobilehero.jpg');
@@ -71,9 +74,9 @@ z-50">
     text-center playfair" style="font-family: 'Playfair Display' , serif;">
 
 
-            <li><a href="#" class="shadow-hover hover:text-[#F2A65A]">Home</a></li>
+            <li><a href="#home" class="shadow-hover hover:text-[#F2A65A]">Home</a></li>
              <li><a href="#menus" class="shadow-hover hover:text-[#F2A65A]">Menu</a></li>
-              <li><a href="#" class="shadow-hover hover:text-[#F2A65A]">About</a></li>
+              <li><a href="#about" class="shadow-hover hover:text-[#F2A65A]">About</a></li>
                <li><a href="#contact" class="shadow-hover hover:text-[#F2A65A]">Contact</a></li>
         </ul>
          <button class=" lg:px-8  px-10 lg:pr-20 pr-2  font-bold lg:py-6 text-[#FFF6D1] lg:text-3xl text-xl shadow-hover hover:text-[#F2A65A]" style="font-family: 'Playfair Display' , serif;">Sign In</button>
@@ -123,7 +126,7 @@ z-50">
      
 
 
-          <div class="  lg:py-20 py-10 bg-[#ffdab9]  lg:w-[100%] " >
+          <div id="home" class="  lg:py-20 py-10 bg-[#ffdab9]  lg:w-[100%] " >
 <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-10  items-center justify-between lg:mt-20 mt-2">
     
     <!-- LEFT SIDE (Image Area) -->
@@ -294,10 +297,10 @@ z-50">
      </div>
 
      <!-- Menu [#F8F1E7] [#9B1C1C] -->
-           <div id="menus" class="bg-[#8B5E3C] p-10 shadow-2xl mx-auto">
+           <div id="menus" class="bg-[#8B5E3C] p-10  mx-auto font-serif">
 
     <!-- Menu Card -->
-    <div class="bg-[#FFE1B8] border-[6px] border-[#CFA77C] rounded-md lg:p-8 p-2 -ml-[30px]  w-[95vw] max-w-[1000px] lg:mx-auto mx-auto ">
+    <div class="bg-[#FFE1B8] border-[6px] border-[#CFA77C] cursor-pointer rounded-md lg:p-8 p-2 -ml-[20px]  w-[95vw] max-w-[1000px] lg:mx-auto mx-auto ">
 
       <!-- Logo -->
       <div class="text-center mb-4">
@@ -316,26 +319,26 @@ z-50">
       <div class="grid grid-cols-2 lg:grid-cols-3 lg:gap-10 gap-4">
 
         <!-- ================= COFFEE (Desktop col1) + MILK (Mobile col1) ================= -->
-        <div class="space-y-6 ml-0 pl-0 lg:space-y-6">
+        <div class="space-y-6 ml-0 pl-0 lg:space-y-6 ">
           <!-- COFFEE Section - Always visible -->
           <div>
-            <h3 class="text-center text-3xl font-semibold border-b border-t border-red-800 py-2 text-[#9B1C1C]">
+            <h3 class="  text-center text-3xl font-semibold border-b border-t border-red-800 py-2 text-[#9B1C1C]">
               COFFEE
             </h3>
 
             <!-- Item -->
-            <div class="mt-6">
+            <div class="mt-6 ">
               <div class="flex items-center">
-                <span>Cappuccino</span>
+                <span class="coffee">Cappuccino</span>
                 <div class="flex-grow border-b border-dotted border-gray-500 mx-2"></div>
                 <span>Rs 90</span>
               </div>
               <p class="text-xs text-red-700 mt-1">Espresso with steamed milk & foam</p>
             </div>
 
-            <div class="mt-4">
+            <div class="mt-4 ">
               <div class="flex items-center">
-                <span>Café Latte</span>
+                <span class="coffee">Café Latte</span>
                 <div class="flex-grow border-b border-dotted border-gray-500 mx-2"></div>
                 <span>Rs 90</span>
               </div>
@@ -344,7 +347,7 @@ z-50">
 
             <div class="mt-4">
               <div class="flex items-center">
-                <span>Café Mocha</span>
+                <span class="coffee">Café Mocha</span>
                 <div class="flex-grow border-b border-dotted border-gray-500 mx-2"></div>
                 <span>Rs 105</span>
               </div>
@@ -353,7 +356,7 @@ z-50">
 
             <div class="mt-4">
               <div class="flex items-center">
-                <span>Americano</span>
+                <span class="coffee">Americano</span>
                 <div class="flex-grow border-b border-dotted border-gray-500 mx-2"></div>
                 <span>Rs 105</span>
               </div>
@@ -369,7 +372,7 @@ z-50">
 
             <div class="mt-4">
               <div class="flex items-center">
-                <span>Hot Milk</span>
+                <span class="coffee">Hot Milk</span>
                 <div class="flex-grow border-b border-dotted border-gray-500 mx-2"></div>
                 <span>Rs 45</span>
               </div>
@@ -398,7 +401,7 @@ z-50">
 
             <div class="mt-4">
               <div class="flex items-center">
-                <span>Hot Milk</span>
+                <span class="coffee">Hot Milk</span>
                 <div class="flex-grow border-b border-dotted border-gray-500 mx-2"></div>
                 <span>Rs 45</span>
               </div>
@@ -414,7 +417,7 @@ z-50">
 
             <div class="mt-4">
               <div class="flex  items-center">
-                <div>Green Tea</div>
+                <div class="coffee">Green Tea</div>
                 <div class="flex-grow border-b border-dotted border-gray-500 mx-2"></div>
                 <div>Rs 50</div>
               </div>
@@ -423,7 +426,7 @@ z-50">
 
             <div class="mt-4">
               <div class="flex items-center">
-                <span>Lemon Tea</span>
+                <span class="coffee">Lemon Tea</span>
                 <div class="flex-grow border-b border-dotted border-gray-500 mx-2"></div>
                 <span>Rs 75</span>
               </div>
@@ -432,7 +435,7 @@ z-50">
 
             <div class="mt-4">
               <div class="flex items-center">
-                <span>Assam Tea</span>
+                <span class="coffee">Assam Tea</span>
                 <div class="flex-grow border-b border-dotted border-gray-500 mx-2"></div>
                 <span>Rs 35</span>
               </div>
@@ -449,7 +452,7 @@ z-50">
 
          <div>
             <div class="flex items-center">
-              <span>Green Tea</span>
+              <span class="coffee">Green Tea</span>
               <div class="flex-grow border-b border-dotted border-gray-500 mx-2"></div>
               <span>Rs 50</span>
             </div>
@@ -458,7 +461,7 @@ z-50">
 
           <div>
             <div class="flex items-center">
-              <span>Lemon Tea</span>
+              <span class="coffee">Lemon Tea</span>
               <div class="flex-grow border-b border-dotted border-gray-500 mx-2"></div>
               <span>Rs 75</span>
             </div>
@@ -467,7 +470,7 @@ z-50">
 
           <div>
             <div class="flex items-center">
-              <span>Assam Tea</span>
+              <span class="coffee">Assam Tea</span>
               <div class="flex-grow border-b border-dotted border-gray-500 mx-2"></div>
               <span>Rs 35</span>
             </div>
@@ -480,6 +483,68 @@ z-50">
     </div>
   </div>       
      
+  <!-- About -->
+<div id="about" class="w-full py-10 bg-[#CFA77C]">
+
+  <!-- 85% Width Container -->
+  <div class="w-[95%] lg:w-[85%] mx-auto">
+
+    <h2 class="py-4 text-center font-bold text-5xl font-serif">
+      About Us
+    </h2>
+
+    <div class="grid grid-cols-1 
+                lg:grid-cols-[1fr_0.6fr_1.2fr] 
+                gap-3 lg:gap-6">
+
+      <!-- Vertical Image -->
+      <div>
+        <img
+          src="img/About1.jpg"
+          class="w-full lg:h-[480px] h-[380px] object-cover rounded-xl shadow-lg"
+        />
+      </div>
+
+      <!-- Two Square Images -->
+      <div class="flex lg:flex-col gap-2 lg:gap-8">
+        <img
+          src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085"
+          class="lg:w-full w-[49%] h-[222px] object-cover rounded-xl shadow-md"
+        />
+        <img
+          src="img/About5.jpg"
+          class="lg:w-full w-[48%] h-[222px] object-cover rounded-xl shadow-md"
+        />
+      </div>
+
+      <!-- Text -->
+      <div class="flex flex-col justify-center lg:text-lg text-sm font-serif">
+
+        <p class=" leading-relaxed mb-4">
+          At Coffee Haven, we believe that every cup tells a story.
+          Our journey began with a simple passion — to craft the finest
+          coffee experience using premium beans and heartfelt service.
+           At Coffee Haven, we believe that every cup tells a story.
+          Our journey began with a simple passion — to craft the finest
+          coffee experience using premium beans and heartfelt service.
+           At Coffee Haven, we believe that every cup tells a story.
+          Our journey began with a simple passion — to craft the finest
+          coffee experience using premium beans and heartfelt service.
+        </p>
+
+        <p class=" leading-relaxed">
+          From sourcing ethically grown beans to creating a warm
+          environment for our community, our mission is to make
+          every sip memorable.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
 
 <!-- Reveiws -->
      <div class="min-h-[550px] bg-[#FFE1B8] py-10 ">
