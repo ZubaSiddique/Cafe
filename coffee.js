@@ -63,9 +63,37 @@ window.addEventListener("resize", () => {
   track.style.transform = `translateX(0px)`;
 });
 // Menu Toggle
- const menuBtn = document.getElementById("menuBtn");
-  const mobileMenu = document.getElementById("mobileMenu");
+//  const menuBtn = document.getElementById("menuBtn");
+//   const mobileMenu = document.getElementById("mobileMenu");
 
-  menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
+//   menuBtn.addEventListener("click", () => {
+//     mobileMenu.classList.toggle("hidden");
+//   });
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+const closeBtn = document.getElementById("closeBtn");
+const mainNav = document.getElementById("mainNav");
+
+// Open Menu
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.remove("hidden");
+  mainNav.classList.add("hidden");
+});
+
+// Close Menu (X button)
+closeBtn.addEventListener("click", closeMenu);
+
+// Close Menu Function
+function closeMenu() {
+  mobileMenu.classList.add("hidden");
+  mainNav.classList.remove("hidden");
+}
+
+// 👇 Close menu when any link is clicked
+const mobileLinks = mobileMenu.querySelectorAll("a");
+
+mobileLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    closeMenu();
   });
+});

@@ -40,6 +40,9 @@ text-shadow:2px 2px 4px gray;
     text-shadow: 5px 5px 10px #F2A65A;
     cursor: pointer;
   }
+  .mobile:hover{
+    text-shadow:2px 2px 4px #4E2F22 ;
+  }
 }
 </style>
 </head>
@@ -50,43 +53,67 @@ text-shadow:2px 2px 4px gray;
      <div class="w-90% overflow-x-hidden">
  <div class="lg:h-[760px] h-[680px] w-full bg-cover bg-center relative hero ">
    
-<nav  class="flex justify-between items-center absolute 
+<nav id="mainNav" class="flex justify-between items-center absolute 
 border-2 border-[#FFF6D1] 
 lg:left-0 left-[20px] lg:right-0 right-[20px]
 mx-auto 
-mt-[49px] 
-py-[5px] 
+lg:mt-[65px] mt-[45px]
+lg:py-[15px] py-[5px]
 px-6
 max-w-[1200px] 
 z-50">
- 
-    <h1 class="font-bold lg:text-5xl text-[37px] text-[#FFF6D1] lg:pl-10 shadow-hover " style="font-family: 'Playfair Display' , serif;">Caffeine</h1>  
-        <!-- <ul  class="flex gap-10  text-[#FFF6D1] text-3xl "
-         style="font-family: 'Playfair Display' , serif;">   [#1c0f08] -->
-<ul id="mobileMenu" 
-    class="lg:flex hidden flex-col lg:flex-row 
-    absolute lg:static 
-    top-[70px] left-[67%] w-[33%]  lg:w-auto 
-    bg-[#4E2F22] lg:bg-transparent 
-    gap-4  lg:gap-10 
-    text-[#FFF6D1] lg:text-3xl text-xl rounded-lg 
-    py-4 lg:py-0 
-    text-center playfair" style="font-family: 'Playfair Display' , serif;">
+
+    <!-- Logo -->
+    <h1 class="font-bold lg:text-5xl text-[37px] text-[#FFF6D1] lg:pl-2"
+        style="font-family: 'Playfair Display', serif;">
+        Caffeine
+    </h1>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden lg:flex gap-10 text-[#FFF6D1] text-3xl "
+        style="font-family: 'Playfair Display', serif;">
+        <li><a href="#home" class="shadow-hover hover:text-[#F2A65A]">Home</a></li>
+        <li><a href="#menus" class="shadow-hover hover:text-[#F2A65A]">Menu</a></li>
+        <li><a href="#about" class="shadow-hover hover:text-[#F2A65A]">About</a></li>
+        <li><a href="#contact" class="shadow-hover hover:text-[#F2A65A]">Contact</a></li>
+    </ul>
+
+    <!-- Desktop Sign In -->
+    <button class="hidden lg:block font-bold text-[#FFF6D1] lg:text-3xl hover:text-[#F2A65A] mr-[15px]"
+        style="font-family: 'Playfair Display', serif;">
+        Sign In
+    </button>
+
+    <!-- Hamburger -->
+    <button id="menuBtn" class="lg:hidden text-[#FFF6D1] text-3xl">
+        ☰
+    </button>
+</nav>
 
 
-            <li><a href="#home" class="shadow-hover hover:text-[#F2A65A]">Home</a></li>
-             <li><a href="#menus" class="shadow-hover hover:text-[#F2A65A]">Menu</a></li>
-              <li><a href="#about" class="shadow-hover hover:text-[#F2A65A]">About</a></li>
-               <li><a href="#contact" class="shadow-hover hover:text-[#F2A65A]">Contact</a></li>
-        </ul>
-         <button class=" lg:px-8  px-10 lg:pr-20 pr-2  font-bold lg:py-6 text-[#FFF6D1] lg:text-3xl text-xl shadow-hover hover:text-[#F2A65A]" style="font-family: 'Playfair Display' , serif;">Sign In</button>
-     
-<!-- Hamburger Button -->
-<button id="menuBtn" class="lg:hidden  text-[#FFF6D1] text-2xl pr-[5px]">
-  ☰
-</button>
+<!-- Mobile Full Screen Menu -->
+<div id="mobileMenu"
+    class="fixed inset-0 bg-[#FFE1B8]
+    hidden flex-col 
+    z-[100] text-[#4E2F22]"
+    style="font-family: 'Playfair Display', serif;">
 
-        </nav>   
+    <!-- Top Bar -->
+    <div class="flex justify-between items-center px-6 pt-8">
+        <h1 class="text-3xl font-bold">Caffeine</h1>
+        <button id="closeBtn" class="text-3xl">✕</button>
+    </div>
+
+    <!-- Menu Links -->
+    <div class="flex flex-col mt-16 gap-8 pl-10 text-2xl  ">
+        <a href="#home" class="mobile">Home</a>
+        <a href="#menus" class="mobile">Menu</a>
+        <a href="#about" class="mobile">About</a>
+        <a href="#contact" class="mobile">Contact</a>
+        <a href="#" class="mobile font-bold">Sign In</a>
+    </div>
+</div>
+
 <div class="relative h-[610px] bg-cover bg-center">
   <p class="absolute lg:top-[240px] top-[175px] lg:w-[400px] w-[350px] lg:left-[800px] md:left-[400px]  left-[23px] lg:text-6xl text-5xl font-bold text-[#FFF6D1] text" data-aos="fade-left" style="font-family: 'Playfair Display', serif;">
     Discover The Art Of Perfect Coffee
@@ -223,7 +250,7 @@ z-50">
       <!-- Card 1 -->
      <div class="w-full sm:w-[300px] h-[400px] border-2 border-[#3A1709] flex flex-col relative flex-shrink-0" data-aos="fade-up-left">
 
-                  <div class="absolute top-[24px] lg:left-[28px] left-[34px] w-[240px] h-[230px] bg-cover bg-center border-[7px]
+                  <div class="absolute top-[24px] lg:left-[28px] md:left-[27.5px] left-[34px] w-[240px] h-[230px] bg-cover bg-center border-[7px]
                    border-[#CFA77C]" style="background-image: url('img/kofe4.jpg');"></div>
 
                   <div class="h-[150px] bg-[#3A1709] flex items-center justify-center "></div>
@@ -235,44 +262,44 @@ z-50">
       <!-- Card 2 -->
   <div class="w-full sm:w-[300px] h-[400px] border-2 border-[#3A1709] flex flex-col relative flex-shrink-0" data-aos="fade-up-left">
 
-                  <div class="absolute top-[24px] lg:left-[28px] left-[34px] w-[240px] h-[230px] bg-cover bg-center border-[7px]
+                  <div class="absolute top-[24px] lg:left-[28px] md:left-[27.5px] left-[34px] w-[240px] h-[230px] bg-cover bg-center border-[7px]
                    border-[#CFA77C]" style="background-image: url('img/kofe1.jpg');"></div>
 
                   <div class="h-[150px] bg-[#3A1709] flex items-center justify-center "></div>
-                  <div class="h-[220px] pt-[142px] font-serif pl-[42px] text-4xl font-bold">Cappucino</div>
+                  <div class="h-[220px] pt-[142px] font-serif pl-[42px] text-4xl font-bold">Americano</div>
                   <div class="h-[80px] bg-[#DCCFC0] text-2xl flex items-center justify-center border-2
                    border-[#3A1709] hover:bg-[#3A1709] hover:text-[#DCCFC0] hover:cursor-pointer" >Order Now</div>
                 </div>
       <!-- Card 3 -->
    <div class="w-full sm:w-[300px] h-[400px] border-2 border-[#3A1709] flex flex-col relative flex-shrink-0" data-aos="fade-up-left">
 
-                  <div class="absolute top-[24px] lg:left-[28px] left-[34px] w-[240px] h-[230px] bg-cover bg-center 
+                  <div class="absolute top-[24px] lg:left-[28px] md:left-[27.5px] left-[34px] w-[240px] h-[230px] bg-cover bg-center 
                   border-[7px] border-[#CFA77C]" style="background-image: url('img/coffee1.jpg');"></div>
 
                   <div class="h-[150px] bg-[#3A1709] flex items-center justify-center "></div>
-                  <div class="h-[220px] pt-[142px] font-serif pl-[42px] text-4xl font-bold">Cappucino</div>
+                  <div class="h-[220px] pt-[142px] font-serif pl-[42px] text-4xl font-bold">Espresso</div>
                   <div class="h-[80px] bg-[#DCCFC0] text-2xl flex items-center justify-center border-2 
                   border-[#3A1709] hover:bg-[#3A1709] hover:text-[#DCCFC0] hover:cursor-pointer" >Order Now</div>
                 </div>
       <!-- Card 4 -->
       <div class="w-full sm:w-[300px] h-[400px] border-2 border-[#3A1709] flex flex-col relative flex-shrink-0" data-aos="fade-up-left">
 
-                  <div class="absolute top-[24px] lg:left-[28px] left-[34px] w-[240px] h-[230px] bg-cover bg-center
+                  <div class="absolute top-[24px] lg:left-[28px] md:left-[27.5px] left-[34px] w-[240px] h-[230px] bg-cover bg-center
                    border-[7px] border-[#CFA77C]" style="background-image: url('img/coffee6.jpg');"></div>
 
                   <div class="h-[150px] bg-[#3A1709] flex items-center justify-center "></div>
-                  <div class="h-[220px] pt-[142px] font-serif pl-[42px] text-4xl font-bold">Cappucino</div>
+                  <div class="h-[220px] pt-[142px] font-serif pl-[42px] text-4xl font-bold">Frape</div>
                   <div class="h-[80px] bg-[#DCCFC0] text-2xl flex items-center justify-center border-2 
                   border-[#3A1709] hover:bg-[#3A1709] hover:text-[#DCCFC0] hover:cursor-pointer" >Order Now</div>
                 </div>
       <!-- Card 5 -->
       <div class="w-full sm:w-[300px] h-[400px] border-2 border-[#3A1709] flex flex-col relative flex-shrink-0" data-aos="fade-up-left">
 
-                  <div class="absolute top-[24px] lg:left-[28px] left-[34px] w-[240px] h-[230px] bg-cover bg-center
+                  <div class="absolute top-[24px] lg:left-[28px] md:left-[27.5px] left-[34px] w-[240px] h-[230px] bg-cover bg-center
                    border-[7px] border-[#CFA77C]" style="background-image: url('img/kofe2.jpg');"></div>
 
                   <div class="h-[150px] bg-[#3A1709] flex items-center justify-center "></div>
-                  <div class="h-[220px] pt-[142px] font-serif pl-[42px] text-4xl font-bold">Cappucino</div>
+                  <div class="h-[220px] pt-[142px] font-serif pl-[42px] text-4xl font-bold">Late</div>
                   <div class="h-[80px] bg-[#DCCFC0] text-2xl flex items-center justify-center border-2
                    border-[#3A1709] hover:bg-[#3A1709] hover:text-[#DCCFC0] hover:cursor-pointer" >Order Now</div>
                 </div>
@@ -298,7 +325,7 @@ z-50">
      </div>
 
      <!-- Menu [#F8F1E7] [#9B1C1C] -->
-           <div id="menus" class="bg-[#8B5E3C] lg:p-10 px-2 py-8 md:px-6 md:py-10  mx-auto font-serif">
+           <div id="menus" class="bg-[#8B5E3C] lg:p-10 px-[10px] py-8 md:px-6 md:py-10  mx-auto font-serif">
 
     <!-- Menu Card -->
     <div class="bg-[#FFE1B8] border-[6px] border-[#CFA77C] cursor-pointer rounded-md lg:p-8 p-2    max-w-[1000px]  mx-auto ">
@@ -644,7 +671,7 @@ z-50">
   <div class="flex items-center justify-center">
     <h1 class="text-5xl font-serif border-4 border-white
                bg-[#FFE1B8] text-[#3A1709] 
-               px-10 py-10 md:px-6">
+               lg:px-10 lg:py-10 px-6 py-10 md:px-4 md:py-8">
       Caffeine
     </h1>
   </div>
