@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Your Cart</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class=" bg-white ">
+<h1 class="lg:text-4xl text-2xl mx-auto  max-w-5xl p-4 font-semibold lg:pl-[390px] pl-[100px] lg:mt-10 mt-4 font-serif font-bold text-black">Shopping Cart</h1>
+<div class="max-w-5xl mx-auto lg:px-8 lg:py-8 px-[10px]  border-2 border-black  rounded bg-white text-black">
+
+<!-- Header -->
+<div class="grid grid-cols-3 font-semibold border-b pb-3 pt-3 mb-4 ">
+<p>PRODUCT</p>
+<p>PRICE</p>
+<p>QUANTITY</p>
+</div>
+
+<!-- Cart Items -->
+<div id="cartItems"></div>
+
+<!-- Subtotal -->
+<div class="flex justify-end mt-6 text-lg font-semibold">
+<p id="cartTotal"></p>
+</div>
+
+<div class="flex justify-center mt-4">
+  <button class="w-[80%] bg-black text-white py-3 my-4 rounded ">
+    Checkout
+  </button>
+</div>
+
+</div>
+
+<script src="cart.js"></script>
+
+</body>
+</html>

@@ -63,12 +63,6 @@ window.addEventListener("resize", () => {
   track.style.transform = `translateX(0px)`;
 });
 // Menu Toggle
-//  const menuBtn = document.getElementById("menuBtn");
-//   const mobileMenu = document.getElementById("mobileMenu");
-
-//   menuBtn.addEventListener("click", () => {
-//     mobileMenu.classList.toggle("hidden");
-//   });
 const menuBtn = document.getElementById("menuBtn");
 const mobileMenu = document.getElementById("mobileMenu");
 const closeBtn = document.getElementById("closeBtn");
@@ -97,3 +91,8 @@ mobileLinks.forEach(link => {
     closeMenu();
   });
 });
+
+
+
+
+

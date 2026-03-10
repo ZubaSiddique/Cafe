@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+<title>Cappuccino</title>
+</head>
+
+<body class="bg-white">
+
+<div class="max-w-6xl mx-auto px-0 sm:px-6 lg:px-2 lg:py-10 ">
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+<!-- IMAGE -->
+<div>
+
+<!-- <img src="Desc coffee.jpg"
+class="w-full  object-cover"> -->
+<img id="productImage" src="" class="w-full h-full object-cover">
+</div>
+
+
+<!-- PRODUCT DETAILS -->
+<div class="px-4">
+
+<!-- <h1 class="text-2xl md:text-3xl font-semibold mb-2">
+CAPPUCCINO
+</h1> -->
+
+<h1 id="productName" class="text-2xl md:text-3xl font-semibold mb-2">
+CAPPUCCINO
+</h1>
+
+<p id="productPrice" class="text-lg md:text-xl mb-3">
+Rs.699.00
+</p>
+
+<p class="text-green-600 mb-4">
+★★★★★ 3 reviews
+</p>
+
+<hr class="mb-5">
+
+
+<p class="text-gray-600 mb-6 text-sm md:text-base">
+Our cappuccino is made with a balanced blend of espresso
+and steamed milk creating a rich creamy texture.
+</p>
+
+
+<!-- STOCK -->
+<div class="flex items-center gap-2 mb-6">
+
+<div class="w-3 h-3 bg-green-500 rounded-full"></div>
+
+<p class="text-sm">In Stock</p>
+
+</div>
+
+
+<!-- QUANTITY -->
+<p class="text-sm mb-2 tracking-widest">QUANTITY</p>
+
+<div class="flex items-center mb-6">
+
+<button class="border px-4 py-2">-</button>
+
+<input type="text" value="1"
+class="w-12 text-center border-t border-b py-2">
+
+<button class="border px-4 py-2">+</button>
+
+</div>
+
+
+<!-- BUTTONS -->
+
+<button id="addToCartBtn"
+class="w-full border border-black py-3 mb-3 hover:bg-black hover:text-white transition">
+
+ADD TO CART
+
+</button>
+
+
+<button
+class="w-full bg-black text-white py-3">
+
+BUY IT NOW
+
+</button>
+
+
+
+<!-- DESCRIPTION -->
+
+<div class="mt-10">
+
+<h2 class="text-lg font-semibold mb-2">
+Ingredients
+</h2>
+
+<ul class="list-disc ml-5 text-gray-600 text-sm">
+
+<li>Espresso</li>
+<li>Steamed Milk</li>
+<li>Milk Foam</li>
+
+</ul>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+<script src="product.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Cart</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gray-100">
+
+<div class="max-w-6xl mx-auto p-8 bg-white shadow-md mt-10 mb-10 rounded">
+
+<h1 class="text-2xl font-semibold mb-6">Shopping Cart</h1>
+
+<!-- Header -->
+<div class="grid grid-cols-4 font-semibold border-b pb-3 mb-4">
+<p>PRODUCT</p>
+<p>PRICE</p>
+<p>QUANTITY</p>
+<p>TOTAL</p>
+</div>
+
+<!-- Items will appear here -->
+<div id="cartItems"></div>
+
+</div>
+
+<script src="cart.js"></script>
+
+</body>
+</html>
