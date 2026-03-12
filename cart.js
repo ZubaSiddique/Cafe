@@ -55,7 +55,7 @@ total += item.price * item.quantity;
 
 const div = document.createElement("div");
 
-div.className = "grid grid-cols-3 items-center border-b gap-0 lg:py-4 py-4 px-6";
+div.className = "grid grid-cols-3 items-center border-b gap-0 lg:py-4 py-4 px-0 lg:px-6";
 
 div.innerHTML = `
 
