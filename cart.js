@@ -119,3 +119,4 @@ totalElement.innerText = "Subtotal: Rs " + total;
 renderCart();
 
 });
+

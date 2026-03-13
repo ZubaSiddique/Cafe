@@ -93,6 +93,20 @@ mobileLinks.forEach(link => {
 });
 
 
+function updateCartCount() {
 
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+let totalItems = 0;
+
+cart.forEach(item => {
+    totalItems += item.quantity;
+});
+
+document.getElementById("cartCount").textContent = totalItems;
+
+}
+
+updateCartCount();
 
 
