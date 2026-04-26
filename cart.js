@@ -1,40 +1,4 @@
-// document.addEventListener("DOMContentLoaded", function(){
-
-// const container = document.getElementById("cartItems");
-
-// let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-// if(cart.length === 0){
-//   container.innerHTML = "<p>Your cart is empty ☕</p>";
-//   return;
-// }
-
-// cart.forEach(function(item){
-
-// const div = document.createElement("div");
-
-// div.style.display = "flex";
-// div.style.alignItems = "center";
-// div.style.gap = "20px";
-// div.style.borderBottom = "1px solid #ddd";
-// div.style.padding = "10px";
-
-// div.innerHTML = `
-// <img src="${item.image}" style="width:120px;height:120px;object-fit:cover;border-radius:6px;">
-
-// <p style="width:150px;font-weight:600;">${item.name}</p>
-
-// <p style="width:80px;"> ${item.price}</p>
-
-// <p style="width:80px;">Qty: ${item.quantity}</p>
-// `;
-
-// container.appendChild(div);
-
-// });
-
-// });
-
+//linked with cart.html
 
 document.addEventListener("DOMContentLoaded", function(){
 
@@ -64,7 +28,7 @@ div.innerHTML = `
 <p class="font-medium">${item.name}</p>
 </div>
 
-<p>Rs ${item.price}</p>
+<p>Rs ${item.quantity} × ${item.price} </p>
 
 <div class="flex items-center gap-3 ">
 
@@ -114,7 +78,6 @@ renderCart();
 totalElement.innerText = "Subtotal: Rs " + total;
 }
 // totalElement.innerText = "Subtotal: Rs " + total;
-
 
 renderCart();
 

@@ -60,12 +60,12 @@ text-shadow:2px 2px 4px gray;
    
 <nav id="mainNav" class="flex  justify-between items-center absolute 
 border-2 border-[#FFF6D1] 
-lg:left-0 left-[20px] lg:right-0 right-[20px]
-mx-auto 
+lg:left-[0px] left-[20px] lg:right-[0px] right-[20px] 
+mx-auto
 lg:mt-[65px] mt-[45px]
 lg:py-[15px] py-[5px]
 px-6
-max-w-[1200px] 
+max-w-[1180px] 
 z-50">
 
     <!-- Logo -->
@@ -84,7 +84,7 @@ z-50">
     </ul>
 
     <!-- Desktop Sign In -->
-    <button class="hidden lg:block font-bold text-[#FFF6D1] lg:text-3xl hover:text-[#F2A65A] -mr-[150px]"
+    <button class="hidden lg:block font-bold text-[#FFF6D1] lg:text-3xl hover:text-[#F2A65A] -mr-[190px]"
         style="font-family: 'Playfair Display', serif;">
         Sign In
     </button>
@@ -92,24 +92,32 @@ z-50">
 🥯
 </a> -->
 
-
+<div class=" flex items-end py-1  ">
     <!-- Hamburger☕ -->
-    <button id="menuBtn" class="lg:hidden text-[#FFF6D1] text-3xl -mr-[100px]">
+    <button id="menuBtn" class="lg:hidden text-[#FFF6D1] text-3xl pl-[60px]">
         ☰
     </button>
-    <div class="relative top-[19px]">
-    <a href="cart.html" class="text-2xl -mr-[18px]  lg:mr-0">
-<img class="lg:w-[27px] lg:h-[27px] w-[20px] h-[20px]   shadow-hover" src="coffee-beans.png" alt="">
-<span id="cartCount"
-    class="absolute -top-2 -right-2 bg-[#FFF6D1] text-black text-xs px-1 py-0 rounded-full">
-    0
-    </span>
-</a></div>
-
  
+<div class="flex items-center   border-white -mr-[20px] lg:mr-[0px]">
+  <a href="cart.html" class="relative flex items-center justify-center">
+  
+     <img 
+      class="w-[30px] h-[30px] lg:w-[35px] lg:h-[35px]  lg:ml-[0px] color-white filter invert brightness-0" 
+      src="shopping-bag.png" 
+      alt=""
+    >
+ <span id="cartCount"
+      class="absolute -top-[5px] right-[2px] lg:-top-[2px] lg:right-[4px]
+             bg-[#FFF6D1] text-black text-[10px] px-[4px] py-[0px] rounded-full">
+      0
+    </span>
+
+  </a>
+</div>
+
+ </div>
 
 </nav>
-
 
 <!-- Mobile Full Screen Menu -->
 <div id="mobileMenu"
@@ -135,22 +143,22 @@ z-50">
 </div>
 
 <div class="relative h-[610px] bg-cover bg-center">
-  <p class="absolute lg:top-[240px] top-[175px] lg:w-[400px] w-[350px] lg:left-[800px] md:left-[400px]   left-[8%] lg:text-6xl text-5xl font-bold text-[#FFF6D1] text" data-aos="fade-left" style="font-family: 'Playfair Display', serif;">
+  <p class="absolute lg:top-[240px] top-[175px] lg:w-[400px] w-[350px] lg:left-[720px] md:left-[400px]   left-[8%] lg:text-6xl text-5xl font-bold text-[#FFF6D1] text" data-aos="fade-left" style="font-family: 'Playfair Display', serif;">
     Discover The Art Of Perfect Coffee
   </p>
 </div>
 
-<div class="absolute lg:top-[540px] top-[460px] lg:left-[640px] md:left-[240px] -left-[32%] sm:-left-[100px] lg:-pl-20 bg-cover bg-center lg:w-[560px] w-[500px] text-[16px]" style="font-family: 'Playfair Display', serif;">
+<div class="absolute lg:top-[540px] top-[460px] lg:left-[560px] md:left-[240px] -left-[32%] sm:-left-[100px] lg:-pl-20 bg-cover bg-center lg:w-[560px] w-[500px] text-[16px]" style="font-family: 'Playfair Display', serif;">
 <p class="left-[900px]  pt-20 ml-40 -mt-[190px] text-[#FFF6D1]  "  data-aos="fade-left">Experience The Rich And Bold Flavors Of Our Exuisite
      Coffee blends , Crafted To Awaken Your Senses And Start Your Day Right</p>
 </div>
 
-<div class="absolute flex lg:top-[540px] top-[460px] lg:left-[800px] md:left-[400px] left-[14px] sm:left-[10%] lg:gap-10 gap-8 " data-aos="fade-left">
+<div class="absolute flex lg:top-[540px] top-[460px] lg:left-[720px] md:left-[400px] left-[14px] sm:left-[10%] lg:gap-10 gap-8 " data-aos="fade-left">
     <a href="#menus"><button class="  lg:px-6 px-4 lg:py-3 py-[10px] transition bg-[#FFF6D1] text-[22px] font-[400] hover:text-[#FFF6D1] border-[#FFF6D1] hover:border-[#FFF6D1] border-2 hover:bg-transparent ">Order Now→</button></a>
-    <a href="#about"><button class=" lg:px-6 px-4 lg:py-3 transition border-2 border-[#FFF6D1] text-[#FFF6D1] text-[22px] font-[400] hover:bg-[#FFF6D1] hover:text-black ">Explore More</button></a>
+    <a href="#about"><button class=" lg:px-6 px-4 lg:py-3 py-[10px] transition border-2 border-[#FFF6D1] text-[#FFF6D1] text-[22px] font-[400] hover:bg-[#FFF6D1] hover:text-black ">Explore More</button></a>
  </div>
  
- <div class="flex absolute gap-10 lg:top-[630px] top-[550px] lg:left-[780px] md:left-[370px] -left-[8px] sm:left-[9%] justify-center" data-aos="fade-left">
+ <div class="flex absolute gap-10 lg:top-[630px] top-[550px] lg:left-[710px] md:left-[370px] -left-[8px] sm:left-[9%] justify-center" data-aos="fade-left">
   <!-- Counter 1 -->
   <div class="text-center ">
     <p class="text-5xl font-bold text-[#FFF6D1]" id="coffeeCount" >10</p>
@@ -212,7 +220,7 @@ z-50">
 <!-- Text side -->
            <div class="w-1/2 lg:pl-10 pl-10 sm:pl-4 lg:w-[600px] w-[450px] " data-aos="fade-right">
             <h1 class=" lg:text-6xl text-5xl font-serif font-bold text-brown-900 text-[#4F200D]">
-        Jean's Coffee
+         Jean's Coffee
         </h1>
 
       <p class="mt-6 text-gray-700 leading-relaxed lg:w-[400px] w-[350px] ">
@@ -275,8 +283,9 @@ z-50">
 
                   <div class="h-[150px] bg-[#3A1709] flex items-center justify-center "></div>
                   <div class="h-[220px] pt-[142px] font-serif  text-4xl font-bold text-center">Cappucino</div>
-                  <div class="h-[80px] bg-[#DCCFC0] text-2xl flex items-center justify-center border-2 
-                  border-[#3A1709] hover:bg-[#3A1709] hover:text-[#DCCFC0] hover:cursor-pointer" >Order Now</div>
+                  <div class="h-[80px] bg-[#DCCFC0] text-2xl flex items-center justify-center border-2 border-[#3A1709]
+                   hover:bg-[#3A1709] hover:text-[#DCCFC0] hover:cursor-pointer order-now-btn"
+                    data-name="Cappuccino" data-image="img/kofe4.jpg" data-price="350">Order Now</div>
                 </div>
 
       <!-- Card 2 -->
@@ -288,7 +297,8 @@ z-50">
                   <div class="h-[150px] bg-[#3A1709] flex items-center justify-center "></div>
                   <div class="h-[220px] pt-[142px] font-serif text-center text-4xl font-bold">Americano</div>
                   <div class="h-[80px] bg-[#DCCFC0] text-2xl flex items-center justify-center border-2
-                   border-[#3A1709] hover:bg-[#3A1709] hover:text-[#DCCFC0] hover:cursor-pointer" >Order Now</div>
+                   border-[#3A1709] hover:bg-[#3A1709] hover:text-[#DCCFC0] hover:cursor-pointer order-now-btn"
+                   data-name="Americano" data-image="img/kofe1.jpg" data-price="390" >Order Now</div>
                 </div>
       <!-- Card 3 -->
    <div class="w-full sm:w-[53%] lg:w-[300px] h-[400px] border-2 border-[#3A1709] flex flex-col relative flex-shrink-0" data-aos="fade-up-left">
@@ -299,7 +309,8 @@ z-50">
                   <div class="h-[150px] bg-[#3A1709] flex items-center justify-center "></div>
                   <div class="h-[220px] pt-[142px] font-serif text-center text-4xl font-bold">Espresso</div>
                   <div class="h-[80px] bg-[#DCCFC0] text-2xl flex items-center justify-center border-2 
-                  border-[#3A1709] hover:bg-[#3A1709] hover:text-[#DCCFC0] hover:cursor-pointer" >Order Now</div>
+                  border-[#3A1709] hover:bg-[#3A1709] hover:text-[#DCCFC0] hover:cursor-pointer order-now-btn" 
+                  data-name="Espresso" data-image="img/coffee1.jpg" data-price="430">Order Now</div>
                 </div>
       <!-- Card 4 -->
       <div class="w-full sm:w-[53%] lg:w-[300px] h-[400px] border-2 border-[#3A1709] flex flex-col relative flex-shrink-0" data-aos="fade-up-left">
@@ -310,7 +321,8 @@ z-50">
                   <div class="h-[150px] bg-[#3A1709] flex items-center justify-center "></div>
                   <div class="h-[220px] pt-[142px] font-serif text-center text-4xl font-bold">Frape</div>
                   <div class="h-[80px] bg-[#DCCFC0] text-2xl flex items-center justify-center border-2 
-                  border-[#3A1709] hover:bg-[#3A1709] hover:text-[#DCCFC0] hover:cursor-pointer" >Order Now</div>
+                  border-[#3A1709] hover:bg-[#3A1709] hover:text-[#DCCFC0] hover:cursor-pointer order-now-btn" 
+                  data-name="Frape" data-image="img/coffee6.jpg" data-price="450">Order Now</div>
                 </div>
       <!-- Card 5 -->
       <div class="w-full sm:w-[53%] lg:w-[300px] h-[400px] border-2 border-[#3A1709] flex flex-col relative flex-shrink-0" data-aos="fade-up-left">
@@ -321,7 +333,8 @@ z-50">
                   <div class="h-[150px] bg-[#3A1709] flex items-center justify-center "></div>
                   <div class="h-[220px] pt-[142px] font-serif text-center text-4xl font-bold">Late</div>
                   <div class="h-[80px] bg-[#DCCFC0] text-2xl flex items-center justify-center border-2
-                   border-[#3A1709] hover:bg-[#3A1709] hover:text-[#DCCFC0] hover:cursor-pointer" >Order Now</div>
+                   border-[#3A1709] hover:bg-[#3A1709] hover:text-[#DCCFC0] hover:cursor-pointer order-now-btn" 
+                   data-name="Late" data-image="img/kofe2.jpg" data-price="470">Order Now</div>
                 </div>
 
 
@@ -348,7 +361,7 @@ z-50">
            <div id="menus" class="bg-[#8B5E3C] lg:p-10 px-[10px] py-8 md:px-6 md:py-10  mx-auto font-serif">
 
     <!-- Menu Card -->
-    <div class="bg-[#FFE1B8] border-[6px] border-[#CFA77C] cursor-pointer rounded-md lg:p-8 p-2    max-w-[1000px]  mx-auto ">
+    <div class="bg-[#FFE1B8] border-[6px] border-[#CFA77C] cursor-pointer rounded-md lg:p-8 p-2    max-w-[1000px]  mx-auto "  data-aos="zoom-in">
 
       <!-- Logo -->
       <div class="text-center mb-4">
@@ -430,7 +443,7 @@ z-50">
 
             <div class="mt-4">
               <div class="flex items-center">
-                <span class="coffee">Hot Milk</span>
+                 <a href="item.html?product=hotmilk"><span class="coffee">Hot Milk</span></a>
                 <div class="flex-grow border-b border-dotted border-gray-500 mx-2"></div>
                 <span>Rs 45</span>
               </div>
@@ -475,7 +488,7 @@ z-50">
 
             <div class="mt-4">
               <div class="flex  items-center">
-                <div class="coffee">Green Tea</div>
+                 <a href="item.html?product=greentea"> <span class="coffee">Green Tea</span></a>
                 <div class="flex-grow border-b border-dotted border-gray-500 mx-2"></div>
                 <div>Rs 50</div>
               </div>
@@ -484,7 +497,7 @@ z-50">
 
             <div class="mt-4">
               <div class="flex items-center">
-                <span class="coffee">Lemon Tea</span>
+                 <a href="item.html?product=lemontea"><span class="coffee">Lemon Tea</span></a>
                 <div class="flex-grow border-b border-dotted border-gray-500 mx-2"></div>
                 <span>Rs 75</span>
               </div>
@@ -493,7 +506,7 @@ z-50">
 
             <div class="mt-4">
               <div class="flex items-center">
-                <span class="coffee">Assam Tea</span>
+                 <a href="item.html?product=assam"> <span class="coffee">Assam Tea</span></a>
                 <div class="flex-grow border-b border-dotted border-gray-500 mx-2"></div>
                 <span>Rs 35</span>
               </div>
@@ -547,7 +560,7 @@ z-50">
   <!-- 85% Width Container -->
   <div class="w-[95%] lg:w-[85%] mx-auto">
 
-    <h2 class="py-2 text-center font-bold text-5xl font-serif text-[#3A1709]">
+    <h2 class="py-2 text-center font-bold text-5xl font-serif text-[#3A1709]" data-aos="fade-up-left">
       About Us
     </h2>
 
@@ -559,7 +572,7 @@ z-50">
       <div>
         <img
           src="img/About1.jpg"
-          class="w-full lg:h-[480px] h-[380px] object-cover rounded-xl shadow-lg"
+          class="w-full lg:h-[480px] h-[380px] object-cover rounded-xl shadow-lg" 
         />
       </div>
 
@@ -567,18 +580,18 @@ z-50">
       <div class="flex lg:flex-col gap-2 lg:gap-8">
         <img
           src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085"
-          class="lg:w-full w-[49%] h-[222px] object-cover rounded-xl shadow-md"
+          class="lg:w-full w-[49%] h-[222px] object-cover rounded-xl shadow-md" 
         />
         <img
           src="img/About5.jpg"
-          class="lg:w-full w-[49%] h-[222px] object-cover rounded-xl shadow-md"
+          class="lg:w-full w-[49%] h-[222px] object-cover rounded-xl shadow-md" 
         />
       </div>
 
       <!-- Text -->
       <div class="flex flex-col justify-center lg:text-lg text-sm font-serif">
 
-        <p class=" leading-relaxed mb-4">
+        <p class=" leading-relaxed mb-4" data-aos="fade-up-left">
           At Coffee Haven, we believe that every cup tells a story.
           Our journey began with a simple passion — to craft the finest
           coffee experience using premium beans and heartfelt service.
@@ -590,7 +603,7 @@ z-50">
           coffee experience using premium beans and heartfelt service.
         </p>
 
-        <p class=" leading-relaxed">
+        <p class=" leading-relaxed" data-aos="fade-up-left">
           From sourcing ethically grown beans to creating a warm
           environment for our community, our mission is to make
           every sip memorable.
@@ -608,7 +621,7 @@ z-50">
      <div class="min-h-[550px] bg-[#FFE1B8] py-10 ">
 
   <h1 class="text-center text-5xl lg:text-6xl font-bold text-[#3A1709]"
-      style="font-family: 'Playfair Display', serif;">
+      style="font-family: 'Playfair Display', serif;" data-aos="fade-up-right">
     What Our Customer Says
   </h1>
 
@@ -758,5 +771,6 @@ z-50">
     AOS.init({ duration: 1000 });
   </script>
     <script src="coffee.js"></script>
+    <script src="product.js"></script>
 </body>
 </html>

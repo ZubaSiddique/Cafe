@@ -1,3 +1,5 @@
+//linked with index.html
+
 function animateCount(id, target, duration) {
     const element = document.getElementById(id);
     let count = 0;
@@ -92,7 +94,7 @@ mobileLinks.forEach(link => {
   });
 });
 
-
+//cart count
 function updateCartCount() {
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -110,3 +112,37 @@ document.getElementById("cartCount").textContent = totalItems;
 updateCartCount();
 
 
+// Order Now button functionality for cards
+document.querySelectorAll('.order-now-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        const productName = this.getAttribute('data-name');
+        const productImage = this.getAttribute('data-image');
+        const productPrice = parseInt(this.getAttribute('data-price'));
+        
+        // Get existing cart from localStorage
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        
+        // Check if item already exists in cart
+        const existingItem = cart.find(item => item.name === productName);
+        
+        if (existingItem) {
+            existingItem.quantity += 1;
+        } else {
+            cart.push({
+                name: productName,
+                price: productPrice,
+                image: productImage,
+                quantity: 1
+            });
+        }
+        
+        // Save to localStorage
+        localStorage.setItem("cart", JSON.stringify(cart));
+        
+        // Show alert message
+        alert("1 item(s) added to cart ☕");
+        
+        // Redirect to cart page
+        window.location.href = "cart.html";
+    });
+});
